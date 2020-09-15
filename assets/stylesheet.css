@@ -1,0 +1,9 @@
+#stickyfoot{
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+.footer-block{
+    margin: 20px 0;
+}
