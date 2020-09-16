@@ -7,3 +7,11 @@
 .footer-block{
     margin: 20px 0;
 }
+header{
+    background-color: blue;
+}
+
+.card{
+    margin:0 auto;
+    float: none;
+}
