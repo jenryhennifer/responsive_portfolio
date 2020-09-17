@@ -1,2 +1,12 @@
-# responsive_portfolio
-My personal portfolio
+# Responsive Portfolio
+
+## Installation
+
+## Technologies
+* Html
+* Css
+* Bootstrap 
+* GitLab 
+* Github
+
+##  

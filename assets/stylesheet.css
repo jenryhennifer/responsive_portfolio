@@ -1,8 +1,14 @@
-#stickyfoot{
+.footer{
     position: absolute;
     height: 100px;
     bottom: 0;
     width: 100%;
+    border-top-width: 10px;
+
+}
+body{
+    margin-bottom: 100px;
+
 }
 
 .footer-block{
