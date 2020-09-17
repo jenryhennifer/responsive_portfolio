@@ -1,4 +1,8 @@
-.footer{
+/* body{
+    padding-bottom: 150px;
+}
+
+footer{
     position: absolute;
     height: 100px;
     bottom: 0;
@@ -6,19 +10,9 @@
     border-top-width: 10px;
 
 }
-body{
-    margin-bottom: 100px;
 
-}
-
-.footer-block{
-    margin: 20px 0;
-}
-header{
-    background-color: blue;
-}
 
 .card{
     margin:0 auto;
     float: none;
-}
+} */
