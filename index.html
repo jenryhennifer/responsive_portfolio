@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel = 'stylesheet' href ="/assets/stylesheet.css">
     <title>About Me</title>
 </head>
 <body style = "background-image:url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661)">
@@ -16,33 +15,33 @@
 
 
     <!--NAVBAR-->
-<nav class="navbar navbar-expand-sm navbar-light bg-light " style="background-color: #e3f2fd;">
-    <div class="p-3 mb-2 bg-info text-light">
-    <a class="navbar-brand text-light" href="index.html">Jennifer Henry</a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light"> <!--navbar-expand-lg allows for the navbar to expand at a certain size-->
+        <div class="p-3 mb-2 bg-info text-light">
+        <a class="navbar-brand text-light" href="index.html">Jennifer Henry</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
             </li>
-        </li>
-    </div>
-  </nav>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+              </ul>
+        </div>
+      </nav>
 
 </br>
 
 
 <!-- about me information-->
-
+<div style = "margin-bottom: 100px"> <!--allowing for the footer not to cover the bottom of the page-->
 <div class = 'col'></div>
 <div class = "col-6"></div>    
     <div class = "container rounded bg-light" style = "max-width: 40rem; scroll-margin-bottom:inherit ;">
@@ -52,7 +51,7 @@
         </header>
         <hr>
         <div class ="row">
-            <figure class = "col-md-6"> <!--self image !CHANGE!-->
+            <figure class = "col-md-6"> <!--self image-->
                 <img src = "aCoolPicOfMe.jpg" style = "max-width: 100%;" alt = "pic of me and the angus the mangus">
             </figure>
             <summary class = 'col-md-6 text-dark'> <!--personal description !CHANGE!-->
@@ -72,9 +71,10 @@
     </div>
 </div>
 <div class = 'col'></div>
+</div>
 
- <!--footer-->
-<footer class = 'page-footer font-small text-info' style = "background-color:gray;">
+ <!--sticky footer-->
+<footer class = 'page-footer font-small fixed-bottom text-info' style = "background-color:gray;">
     <div class = 'stickyfooter text-center' style= 'border-top: 10px solid'>
           <p class='footer-block'>© Copyright 2020 Jennifer Henry</p>
     </div>
