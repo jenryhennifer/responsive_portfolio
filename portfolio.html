@@ -6,20 +6,13 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
     integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
+  <link rel='stylesheet' href='style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <title>Portfolio</title>
 </head>
 
 <body class='overflow-auto'
   style='background-image:url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661)'>
-  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
-    integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'
-    crossorigin='anonymous'></script>
-  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
-    integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
-    crossorigin='anonymous'></script>
-  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-    integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
-    crossorigin='anonymous'></script>
 
   <!--navigation bar-->
   <nav class='navbar navbar-expand-sm navbar-light bg-light'>
@@ -60,15 +53,15 @@
 
       <!-- Yelp for Help -->
       <figure class='p-2'>
-        <!--giving padding to each photo-->
         <div class='card' style='width: 18rem;'>
           <img src='images/yelp.png' class='card-img-top' alt='yelp image'>
           <div class='card-body'>
-            <h5 class='card-title text-center'>Yelp For Help</h5>
+            <h5 class='card-title'>Yelp For Help</h5>
             <button type='button' class='btn btn-outline-info' data-toggle='modal'
               data-target='#yelpModal'>Preview</button>
           </div>
         </div>
+        <!-- yelp modal -->
         <div id='yelpModal' class='modal fade' role='dialog'>
           <div class='modal-dialog'>
             <div class='modal-content'>
@@ -76,9 +69,15 @@
                 <h5 class='modal-title'>Yelp For Help!</h5>
                 <button type='button' class='close' data-dismiss='modal'>&times;</button>
               </div>
+              <img class='sample' src='images/yelpSample.png' alt='sample of yelp page'>
               <div class='modal-body'>
                 Have you ever had your car broken into while you're out and about with friends? Have no fear! We have
-                created a page where you can compare areas based on car break ins. </div>
+                created a page where you can compare areas based on car break ins.
+                <hr>
+                Contribution Credits: <br>
+                Daniel Caudra: https://github.com/DCuadra85 <br>
+                Rebecca Eng: https://github.com/engrebecca
+              </div>
               <div class='modal-footer'>
                 <button type='button' class='btn btn-info' id='yelpLink'>Open</button>
               </div>
@@ -87,56 +86,75 @@
         </div>
       </figure>
 
-
-
       <!-- Work Schedule -->
       <figure class='p-2'>
         <div class='card' style='width: 18rem;'>
           <img src='images/worksched.png' class='card-img-top' alt='yelp image'>
           <div class='card-body'>
-            <h5 class='card-title text-center'>My Daily Scheduler</h5>
+            <h5 class='card-title'>My Daily Scheduler</h5>
             <button type='button' class='btn btn-outline-info' data-toggle='modal' data-target='#workSchedModal'>
               Preview
             </button>
           </div>
         </div>
-        <div class='row mx-auto'>
-          <div class='modal fade' id='workSchedModal' tabindex='-1' aria-labelledby='exampleModalLabel'
-            aria-hidden='true'>
+        <!-- work schedule modal -->
+        <div class='modal fade' id='workSchedModal'>
+          <div class='modal-dialog'>
+            <div class='modal-content'>
+              <div class='modal-header'>
+                <h5 class='modal-title'>My Daily Scheduler</h5>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                  <span aria-hidden='true'>&times;</span>
+                </button>
+              </div>
+              <img class='sample' src='images/workschedsampler.png' alt='sample of work schedule page'>
+              <div class='modal-dialog modal-dialog-centered p-2'>
+                The purpose of this project was to create a work day planner. The planner is used to make a schedule
+                between 9 am and 5 pm. The top of the screen displays the current date and time. Each time block is
+                color coded to indicate the past (gray), present (red), or future (green). When the user clicks the
+                timeblock they have the opprotunity to type in a daily task. When the button is pressed, the
+                information in the timeblock is saved to the local storage to allow the information to save in case
+                the browser is closed.
+              </div>
+              <div class='modal-footer'>
+                <button type='button' class='btn btn-info' id='passowrdLink'>Open</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Random Password Generator -->
+        <figure class='p-2'>
+          <div class='card' style='width: 18rem;'>
+            <img src='images/password.png' class='card-img-top' alt='yelp image'>
+            <div class='card-body'>
+              <h5 class='card-title'>Random Password Generator</h5>
+              <button type='button' class='btn btn-outline-info' data-toggle='modal'
+                data-target='#passwordModal'>Preview</button>
+            </div>
+          </div>
+          <!-- password modal -->
+          <div id='passwordModal' class='modal fade' role='dialog'>
             <div class='modal-dialog'>
               <div class='modal-content'>
                 <div class='modal-header'>
-                  <h5 class='modal-title text-center' id='exampleModalLabel'>My Daily Scheduler</h5>
-                  <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                  </button>
+                  <h5 class='modal-title'>Random Passowrd Generator</h5>
+                  <button type='button' class='close' data-dismiss='modal'>&times;</button>
                 </div>
-                <div class='modal-dialog modal-dialog-centered'>
-                  The purpose of this project was to create a work day planner. The planner is used to make a schedule
-                  between 9 am and 5 pm. The top of the screen displays the current date and time. Each time block is
-                  color coded to indicate the past (gray), present (red), or future (green). When the user clicks the
-                  timeblock they have the opprotunity to type in a daily task. When the button is pressed, the
-                  information in the timeblock is saved to the local storage to allow the information to save in case
-                  the browser is closed.
+                <img class='sample' src='images/passwordSample.png' alt='sample of yelp page'>
+                <div class='modal-body'>
+                  The purpose of this project was to use JavaScript to generate a random password. Once the button is
+                  pressed it prompts the user to chose a desired length of a password between 8 and 128 characters.
+                  Next the user must confirm if they want upper case, lower case, numbers, and or special characters.
+                  Once the prompts are completed the password will generate automatically on the screen. If the button
+                  is pressed again, the user with be given the same prompt and a new password.
                 </div>
                 <div class='modal-footer'>
-                  <button type='button' class='btn btn-info' id='scheduleLink'>Open</button>
+                  <button type='button' class='btn btn-info' id='passwordLink'>Open</button>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- remove -->
-      </figure>
-      <figure class='p-2'>
-        <img class='rounded' src='https://via.placeholder.com/250' alt='holder image'>
-      </figure>
-      <figure class='p-2'>
-        <img class='rounded' src='https://via.placeholder.com/250' alt='holder image'>
-      </figure>
-      <figure class='p-2'>
-        <img class='rounded' src='https://via.placeholder.com/250' alt='holder image'>
-      </figure>
+        </figure>
     </div>
   </div>
   </div>
@@ -149,7 +167,15 @@
   </footer>
 
 
-
+  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
+    integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'
+    crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+    integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+    crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+    integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
+    crossorigin='anonymous'></script>
   <script src='portfolioScript.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
