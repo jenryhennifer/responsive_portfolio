@@ -5,8 +5,54 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background: url('images/background.png');
+}
+
+footer{
+    z-index: 10;
 }
 
 .logo{
     height: 30px;
+    filter: invert(100%);
 }
+
+.carousel-control-prev-icon,
+.carousel-control-prev-icon, .card {
+    color: white;
+}
+
+.carousel{
+    z-index: 0;
+}
+
+.navbar{
+    z-index: 10;
+}
+
+.card{
+    background-color: transparent;
+    border: block;
+    border-color: white;
+}
+
+.img-circle{
+    border-radius: 50%;
+    
+}
+
+.productCard{
+    height: 100px;
+}
+
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+  
+  .element {
+    @include clearfix;
+  }

@@ -11,12 +11,12 @@
   <title>About Me</title>
 </head>
 
-<body style='background-image:url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661)'>
+<body>
 
   <!--NAVBAR-->
-  <nav class='navbar navbar-expand-sm navbar-light bg-light'>
+  <nav class='navbar navbar-expand-sm navbar-light bg-transparent'>
     <!--navbar-expand-lg allows for the navbar to expand at a certain size-->
-    <div class='p-3 mb-2 bg-info text-light'>
+    <div class='p-3 mb-2 text-light'>
       <a class='navbar-brand text-light' href='index.html'>Jennifer Henry</a>
     </div>
     <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent'
@@ -26,13 +26,13 @@
     <div class='collapse navbar-collapse' id='navbarSupportedContent'>
       <ul class='navbar-nav ml-auto'>
         <li class='nav-item active'>
-          <a class='nav-link' href='contact.html'>Contact <span class='sr-only'>(current)</span></a>
+          <a class='nav-link text-light' href='contact.html'>Contact <span class='sr-only'>(current)</span></a>
         </li>
         <li class='nav-item'>
-          <a class='nav-link' href='portfolio.html'>Portfolio</a>
+          <a class='nav-link text-light' href='portfolio.html'>Portfolio</a>
         </li>
         <li class='nav-item'>
-          <a class='nav-link' href='index.html'>About</a>
+          <a class='nav-link text-light' href='index.html'>About</a>
         </li>
       </ul>
     </div>
@@ -46,7 +46,7 @@
     <!--allowing for the footer not to cover the bottom of the page-->
     <div class='col'></div>
     <div class='col-6'></div>
-    <div class='container rounded bg-light' style='max-width: 40rem; scroll-margin-bottom:inherit ;'>
+    <div class='container rounded bg-transparent' style='max-width: 40rem; scroll-margin-bottom:inherit ;'>
       <hr>
       <header class='row col-8'>
         <h1 class='text-info'>About Me</h1>
@@ -55,13 +55,11 @@
       <main class='row'>
         <figure class='col-md-6'>
           <!--self image-->
-          <img src='aCoolPicOfMe.jpg' style='max-width: 100%;' alt='pic of me and the angus the mangus'>
+          <img class='img-circle z-depth-2' src='images/aCoolPicOfMe.jpg' style='max-width: 100%;' alt='pic of me and the angus the mangus'>
         </figure>
-        <div class='col-md-6 text-dark'>
+        <div class='col-md-6 text-light'>
           <!--personal description !CHANGE!-->
-          <p> My name is Jennifer, but you can call me Jen! I am 24 years old living in the San Francisco Bay Area.
-            I am currently studing web development throught the UC Berkeley Extension Program. In my free time I enjoy
-            reading, hiking, and eating.</p>
+          <p> My name is Jennifer, but you can call me Jen! I am a full stack web developmenter.</p>
           <p>I have a cat named Koby, a dog named Ruby, and claimed my boyfriends dog, angus (as seen in the photo).
             They're all extremely needy and a littly chubby.</p>
           <p class='text-center'>🌉San Francisco, Bay Area❤️</p>
@@ -71,11 +69,11 @@
         <div class='col-md-4'></div>
         <div class='col-md-4 text-center'>
           <div class='btn-group' role='group' aria-label='Basic example'>
-            <a class='btn btn-info' href='https://github.com/jenryhennifer' role='button' target='_blank'><img
+            <a class='btn btn-outline-info border-right-0' href='https://github.com/jenryhennifer' role='button' target='_blank'><img
                 class='logo' src='images/githublogo.png'></a>
-            <a class='btn btn-info' href='https://www.linkedin.com/in/jennifer-henry-4a540a149/' role='button'
+            <a class='btn btn-outline-info border-left-0 border-right-0' href='https://www.linkedin.com/in/jennifer-henry-4a540a149/' role='button'
               target='_blank'><img class='logo' src='images/linkedinlogo.png'></a>
-            <a class='btn btn-info' href='https://medium.com/@jenhenry1995' role='button' target='_blank'><img class='logo'  src='images/medium.png'></a>
+            <a class='btn btn-outline-info border-left-0' href='https://medium.com/@jenhenry1995' role='button' target='_blank'><img class='logo'  src='images/medium.png'></a>
           </div>
         </div>
         <div class='col-md-4'></div>
@@ -85,8 +83,8 @@
   </div>
 
   <!--sticky footer-->
-  <footer class='page-footer font-small fixed-bottom text-info' style='background-color:gray;'>
-    <div class='stickyfooter text-center' style='border-top: 10px solid'>
+  <footer class='page-footer font-small fixed-bottom text-light' style='background-color: transparent'>
+    <div class='stickyfooter text-center' style='border-top: .5px dotted'>
           <p class='footer-block'>© Copyright 2020 Jennifer Henry</p>
     </div>
   </footer>
