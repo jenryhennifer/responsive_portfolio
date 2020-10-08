@@ -1,25 +1,22 @@
-.sample{
-    width: 100%;
-    height: auto;
-}
-
 body{
     font-family: 'Montserrat', sans-serif;
     background: url('images/background.png');
     height: 100%
 }
 
-footer{
-    z-index: 10;
-}
-
-.logo{
-    height: 30px;
-    filter: invert(100%);
-}
-
 .btn{
     border: double;
+}
+
+.card{
+    background-color: transparent;
+    border: block;
+    border-color: white;
+    border: double;
+}
+
+.carousel{
+    z-index: 0;
 }
 
 .carousel-control-prev-icon,
@@ -27,18 +24,12 @@ footer{
     color: white;
 }
 
-.carousel{
-    z-index: 0;
-}
+.element {
+    @include clearfix;
+  }
 
-.navbar{
+footer{
     z-index: 10;
-}
-
-.card{
-    background-color: transparent;
-    border: block;
-    border-color: white;
 }
 
 .img-circle{
@@ -46,8 +37,9 @@ footer{
     
 }
 
-.productCard{
-    height: 100px;
+.logo{
+    height: 30px;
+    filter: invert(100%);
 }
 
 @mixin clearfix() {
@@ -57,12 +49,34 @@ footer{
       clear: both;
     }
   }
-  
-  .element {
-    @include clearfix;
-  }
 
-  #portfolioContainer{
+  .navbar{
+    z-index: 10;
+}
+
+#portfolioContainer{
     height: calc(100vh - 190px);
     overflow: auto;
-  }
+}
+
+.productCard{
+    height: 100px;
+}
+
+.sample{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
