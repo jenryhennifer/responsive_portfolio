@@ -6,15 +6,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background: url('images/background.png');
+    height: 100%
 }
 
 footer{
     z-index: 10;
-}
-
-main{
-    margin-bottom: 200px;
-    overflow
 }
 
 .logo{
@@ -64,4 +60,9 @@ main{
   
   .element {
     @include clearfix;
+  }
+
+  #portfolioContainer{
+    height: calc(100vh - 190px);
+    overflow: auto;
   }
