@@ -1,12 +1,16 @@
 //click links for the portfolio page to open to the deployment links for each app
 
 $('#yelpDeploy').on('click', () => window.open('https://jenryhennifer.github.io/dreamteamrepo/'))
-$('#yelpRepo').on('click')
+$('#yelpRepo').on('click', () => window.open('https://github.com/jenryhennifer/dreamteamrepo'))
 
 $('#scheduleDeploy').on('click', () => window.open('https://jenryhennifer.github.io/workDaySchedule/'))
-$('#scheduleRepo').on('click')
+$('#scheduleRepo').on('click', () => window.open('https://github.com/jenryhennifer/workDaySchedule'))
 
-$('#passwordLink').on('click', () => window.open('https://jenryhennifer.github.io/passwordGenerator/'))
+$('#passwordDeploy').on('click', () => window.open('https://jenryhennifer.github.io/passwordGenerator/'))
+$('#passwordRepo').on('click', () => window.open('https://github.com/jenryhennifer/passwordGenerator'))
+
+$('#weatherDeploy').on('click', () => window.open('https://jenryhennifer.github.io/myWeatherApp/'))
+$('#weatherRepo').on('click', () => window.open('https://github.com/jenryhennifer/myWeatherApp'))
 
 
 //Email Submit Attempt
@@ -21,3 +25,4 @@ $('#emailSubmit').on('click', function(event){
 
     document.location = 'mailto:jenhenry1995@gmail.com?subject='+subject+'&body='+message + name;
 });
+

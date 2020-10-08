@@ -12,9 +12,18 @@ footer{
     z-index: 10;
 }
 
+main{
+    margin-bottom: 200px;
+    overflow
+}
+
 .logo{
     height: 30px;
     filter: invert(100%);
+}
+
+.btn{
+    border: double;
 }
 
 .carousel-control-prev-icon,
