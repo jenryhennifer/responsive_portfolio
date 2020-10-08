@@ -35,7 +35,6 @@ UPDATED 2020.10.07
 
 ##  Description
 
-UPDATED 2020.10.07
 
 This webpage is my first attempt at my portfolio using [Bootstrap](https://getbootstrap.com/). Instead of using media queries, I used styling from Bootstrap to allow the page to be reactive. This is my first attempt at using bootstrap to make a successful, responsive, webpage. The navigation bar at the top is interactive and will guide you to one of 3 pages:
 
@@ -68,6 +67,46 @@ The final element I attempted was the Footer. This was the most challenging part
 </footer>
 ```
 
+UPDATED 2020.10.07
+
+The contact me form is now fully functional to send an email. When the submit button is clicked, the user's default email on their computer will automatically open with my email at the top, their name and subject inside the subject line, and the message they wrote inside the message of the email; all ready to click send. See below for the on click jQuery function:
+
+```
+$('#emailSubmit').on('click', function(event){
+    event.preventDefault();
+    let name = $('#userName').val();
+    let subjectLine = $('#subjectLine').val();
+    let message = $('#message').val();
+    let subject = name + ': ' + subjectLine
+
+
+    document.location = 'mailto:jenhenry1995@gmail.com?subject='+subject+'&body='+message + name;
+});
+```
+
+A click feature was added with jQuery onto the modals to access both the github repo and the deployment for each assignment in the portfolio. The modals include an image and short description of each project. This will be updated as I continue my assingments.
+
+![Modal](images/modalExample.png)
+
+
+```
+$('#weatherDeploy').on('click', () => window.open('https://jenryhennifer.github.io/myWeatherApp/'))
+$('#weatherRepo').on('click', () => window.open('https://github.com/jenryhennifer/myWeatherApp'))
+```
+
+Clearfix helped flexbox prevent odd floats with the cards. This group from CSS is a format for bootstrap clearfix:
+
+```
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+```
+
+
 
 
 <hr />
@@ -79,7 +118,7 @@ I hope to use this one day for future employers to see my abilities, as well as,
 
 UPDATED 2020.10.07
 
-I plan to make the page more interactive and update my about me (i'm not good about describing myself). I also plan to add an up to date resume once I have completed my class. I'm not too happy with my portfolio page and hope to make it look better later on, 
+I plan to make the page more interactive and update my about me (i'm not good about describing myself). I also plan to add an up to date resume once I have completed my class. I'm not too happy with my portfolio page and hope to make it look better later on.
 
 <hr />
 
