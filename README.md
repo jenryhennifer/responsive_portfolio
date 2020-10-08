@@ -14,22 +14,28 @@ https://github.com/jenryhennifer/responsive_portfolio
 <hr />
 
 ## Technologies
-* Html
+* HTML
+* CSS
 * Bootstrap 
 * GitLab 
 * Github
+* JQUERY
+* JavaScript
 
 <hr />
 
 ## Sample Images
 
-![Contact](images/contact.png)
-![Portfolio](images/portfolio.png)
-![AboutMe](images/aboutme.png)
+UPDATED 2020.10.07
+![Contact](images/updatedAboutMe.jpeg)
+![Portfolio](images/updatedPortfolio.jpeg)
+![AboutMe](images/updatedAboutMe.jpeg)
 
 <hr />
 
 ##  Description
+
+UPDATED 2020.10.07
 
 This webpage is my first attempt at my portfolio using [Bootstrap](https://getbootstrap.com/). Instead of using media queries, I used styling from Bootstrap to allow the page to be reactive. This is my first attempt at using bootstrap to make a successful, responsive, webpage. The navigation bar at the top is interactive and will guide you to one of 3 pages:
 
@@ -61,10 +67,8 @@ The final element I attempted was the Footer. This was the most challenging part
   </div>
 </footer>
 ```
-I made sure to fix it to the bottom of the screen, It often covered the content on each page, especially the portfolio page. I overcame my frustrations by using margins around my containers. See GIF below:
 
 
-![Video](https://media.giphy.com/media/tfKiiPBPd26rqvIoeH/giphy.gif)
 
 <hr />
 
@@ -72,6 +76,10 @@ I made sure to fix it to the bottom of the screen, It often covered the content 
 I plan to make this more personalized as well as adding my future projects into 'portfolio'. I plan to allow the contact me form to be fully functioning. Since this is my first attempt, the colors will change in the future as well as abilities of the webpage by incrementing features I learn in the future.
 
 I hope to use this one day for future employers to see my abilities, as well as, sample my future projects.
+
+UPDATED 2020.10.07
+
+I plan to make the page more interactive and update my about me (i'm not good about describing myself). I also plan to add an up to date resume once I have completed my class. I'm not too happy with my portfolio page and hope to make it look better later on, 
 
 <hr />
 
