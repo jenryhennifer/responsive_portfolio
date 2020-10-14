@@ -17,6 +17,9 @@ $('#employeeSample').on('click', () => window.open('https://www.youtube.com/watc
 $('#employeeRepo').on('click', () => window.open('https://github.com/jenryhennifer/employeeSummary'))
 
 
+$('#READMEsample').on('click', () => window.open('https://www.youtube.com/watch?v=WmI48GBTX4k'))
+$('#READMErepo').on('click', () => window.open('https://github.com/jenryhennifer/READMEgenerator'))
+
 //Email Submit Attempt
 
 $('#emailSubmit').on('click', function(event){
