@@ -13,6 +13,10 @@ $('#weatherDeploy').on('click', () => window.open('https://jenryhennifer.github.
 $('#weatherRepo').on('click', () => window.open('https://github.com/jenryhennifer/myWeatherApp'))
 
 
+$('#employeeSample').on('click', () => window.open('https://www.youtube.com/watch?v=GvJ9kiWJXzQ'))
+$('#employeeRepo').on('click', () => window.open('https://github.com/jenryhennifer/employeeSummary'))
+
+
 //Email Submit Attempt
 
 $('#emailSubmit').on('click', function(event){

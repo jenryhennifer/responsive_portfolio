@@ -98,6 +98,18 @@
           </div>
         </figure>
       </div>
+      <div class='row clearfix'>
+        <!-- Employee Summary -->
+        <div class='card h-100' style='width: 20rem;'>
+          <img src='images/htmlsample.png' class='card-img-top h-50' alt='employee summary'>
+          <div class='card-body'>
+            <h5 class='card-title'>Employee Summary</h5>
+            <button type='button' class='btn btn-outline-info' data-toggle='modal'
+              data-target='#employeeModal'>Preview</button>
+          </div>
+        </div>
+        </figure>
+      </div>
   </main>
 
   <!-- </div> -->
@@ -196,6 +208,29 @@
         <div class='modal-footer'>
           <button type='button' class='btn btn-info' id='weatherDeploy'>Deployment</button>
           <button type='button' class='btn btn-info' id='weatherRepo'>Repository</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Employee summary modal -->
+  <div id='employeeModal' class='modal fade' role='dialog'>
+    <div class='modal-dialog modal-dialog-scrollable'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <h5 class='modal-title'>Employee Summary</h5>
+          <button type='button' class='close' data-dismiss='modal'>&times;</button>
+        </div>
+        <div class='modal-body'>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GvJ9kiWJXzQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div>
+          The purpose of this project was to build a software engineering team generator. This app will prompt the user
+          for information about the manager, then proceed to give 3 options to add an employee: Intern, Engineer, Done.
+          The user can add as many interns or engineers as they please, but when 'Done' is chosen it will render an HTML
+          file presenting all the infomration given.
+        </div>
+        <div class='modal-footer'>
+          <button type='button' class='btn btn-info' id='employeeSample'>Sample Video</button>
+          <button type='button' class='btn btn-info' id='employeeRepo'>Repository</button>
         </div>
       </div>
     </div>
