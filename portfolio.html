@@ -40,6 +40,8 @@
   <br>
 
   <!--portfolio content-->
+
+  <!-- OBSERVE THIS PAGE FOR POSSIBLE UPDATE https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity -->
   <main class='container' id='portfolioContainer'>
 
     <!-- <div style='margin-bottom: 200px;'> -->
@@ -51,6 +53,30 @@
       <hr>
 
       <!-- Yelp for Help -->
+      <div class='row clearfix'>
+        <figure class='col-md'>
+          <div class='card h-100' style='width: 20rem;'>
+            <img src='images/whimItLogoo.png' class='card-img-top h-50' alt='WhimIt'>
+            <div class='card-body'>
+              <h5 class='card-title'>WhimIt!</h5>
+              <button type='button' class='btn btn-outline-info' data-toggle='modal'
+                data-target='#whimModal'>Preview</button>
+            </div>
+          </div>
+        </figure>
+        <!-- Work Schedule -->
+        <figure class='col-md'>
+          <div class='card h-100' style='width: 20rem;'>
+            <img src='images/tracker.png' class='card-img-top h-50' alt='tracker image'>
+            <div class='card-body'>
+              <h5 class='card-title'>Terminal Employee Tracker</h5>
+              <button type='button' class='btn btn-outline-info' data-toggle='modal' data-target='#trackerModal'>
+                Preview
+              </button>
+            </div>
+          </div>
+        </figure>
+      </div>
       <div class='row clearfix'>
         <figure class='col-md'>
           <div class='card h-100' style='width: 20rem;'>
@@ -273,6 +299,53 @@
       </div>
     </div>
   </div>
+  <div id='whimModal' class='modal fade' role='dialog'>
+    <div class='modal-dialog modal-dialog-scrollable'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <h5 class='modal-title'>WhimIt!</h5>
+          <button type='button' class='close' data-dismiss='modal'>&times;</button>
+        </div>
+        <div class='modal-body'>
+          <img class='sample' src='images/whimItSample.png' alt='sample of yelp page'>
+          The purpose of this project was to produce a forum style blog for users to freely use when they come up with
+          an idea on the whim! WhimIt is a program to reproduce some of the functionalities of the popular forum based
+          website "Reddit" which is organized by categories, posts, and comments.
+          <hr>
+          Contribution Credits: <br>
+          Nathan Vu: https://github.com/nathanmvu <br>
+          Jerry Leong: https://github.com/jleong20
+        </div>
+        <div class='modal-footer'>
+          <button type='button' class='btn btn-outline-info' id='whimDeploy'>Deployment</button>
+          <button type='button' class='btn btn-outline-info' id='whimRepo'>Repository</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='trackerModal' class='modal fade' role='dialog'>
+    <div class='modal-dialog modal-dialog-scrollable'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <h5 class='modal-title'>Employee Tracker</h5>
+          <button type='button' class='close' data-dismiss='modal'>&times;</button>
+        </div>
+        <div class='modal-body'>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7gOH9BgTj5E" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          The purpose of this project was to create a Content Management System (CMS) to manage employees of a company.
+          The user is given the opprotunity to add, delete, or view departments, roles, and employees.
+        </div>
+        <div class='modal-footer'>
+          <button type='button' class='btn btn-outline-info' id='trackerSample'>Sample Video</button>
+          <button type='button' class='btn btn-outline-info' id='trackerRepo'>Repository</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--footer-->

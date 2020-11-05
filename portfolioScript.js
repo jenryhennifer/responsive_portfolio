@@ -20,6 +20,12 @@ $('#employeeRepo').on('click', () => window.open('https://github.com/jenryhennif
 $('#READMEsample').on('click', () => window.open('https://www.youtube.com/watch?v=WmI48GBTX4k'))
 $('#READMErepo').on('click', () => window.open('https://github.com/jenryhennifer/READMEgenerator'))
 
+$('#whimDeploy').on('click',()=> window.open('https://obscure-citadel-38973.herokuapp.com/'))
+$('#whimRepo').on('click',()=> window.open('https://github.com/jenryhennifer/Project-2'))
+
+$('#trackerSample').on('click', ()=>window.open('https://www.youtube.com/watch?v=7gOH9BgTj5E&feature=youtu.be'))
+$('#trackerRepo').on('click', ()=>window.open('https://github.com/jenryhennifer/employeeTracker'))
+
 //Email Submit Attempt
 
 $('#emailSubmit').on('click', function(event){
